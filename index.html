@@ -18,8 +18,8 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Math My Property</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+    <a class="navbar-brand text-white" href="#">Math My Property</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,184 +27,280 @@
     <div class="collapse navbar-collapse navbar_li_items" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          <a class="nav-link text-white text-right" href="#">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link text-white text-right" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link text-white text-right" href="#">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
+
   <br>
+
   <!-- Main page container -->
   <div class="container">
     <div class="row">
-      <!-- Property Price -->
+      <div class="col">
+        <h5 class="text-center">Please complete all relevant fields</h5>
+      </div>
+    </div>
+    <br>
+    <!-- Property Price -->
+    <div class="row">
       <div class="col-12 col-md-6">
         <p class="text-center mb-0">Property Price</p>
       </div>
       <!-- Property Price Input -->
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100">
+      <div class="col-12 col-md-6 input-group">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-home"></i></span>
+        </div>
       </div>
     </div>
+
     <hr>
+
+    <!-- Legal Fees -->
     <div class="row">
+      <div class="col-12">
+        <h5 class="text-center mb-3">Legal Fees</h5>
+      </div>
       <!-- Legal Fees Header -->
-      <div class="col-12">
-        <h5 class="text-center">Legal Fees</h5>
-      </div>
-      <!-- Legal Fees Inputs -->
       <div class="col-12 col-md-6">
-        <p class="text-center mb-0">Legal fees if charged as a %</p>
+        <p class="text-center mb-0">Legal fees if charged as a percentage</p>
       </div>
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100">
+      <!-- Legal Fees Input -->
+      <div class="col-12 col-md-6 input-group">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00%">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-percent"></i></span>
+        </div>
       </div>
-      <br><br>
-      <div class="col-12 col-md-6">
-        <p class="text-center mb-0">Legal fees</p>
+      <!-- Legal Fees Header -->
+      <div class="col-12 col-md-6 mt-3">
+        <p class="text-center mb-0"></p>
       </div>
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100" disabled>
+      <!-- Legal Fees Input Disabled-->
+      <div class="col-12 col-md-6 input-group mt-3">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" disabled>
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
+        </div>
       </div>
-      <div class="col-12">
+    </div>
+    <!-- Or -->
+    <div class="row">
+      <div class="col-12 mt-3">
         <p class="text-center">or</p>
       </div>
+    </div>
+    <!-- Legal Fees Set Amount -->
+    <div class="row">
+      <!-- Legal Fees Set Amount <p> -->
       <div class="col-12 col-md-6">
         <p class="text-center mb-0">Legal fees as a set amount</p>
       </div>
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100">
+      <!-- Legal Fees Set Amount Input -->
+      <div class="col-12 col-md-6 input-group">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
+        </div>
       </div>
     </div>
+
     <hr>
+
     <!-- Taxes -->
     <div class="row">
-      <!-- Taxes Header -->
       <div class="col-12">
-        <h5 class="text-center">Taxes</h5>
+        <h5 class="text-center mb-3">Taxes</h5>
       </div>
-      <!-- Stamp Duty -->
+      <!-- Stamp Duty Header -->
       <div class="col-12 col-md-6">
-        <p class="text-center mb-0">Stamp Duty Rate %</p>
+        <p class="text-center mb-0">Stamp Duty Rate</p>
       </div>
       <!-- Stamp Duty Input -->
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100">
+      <div class="col-12 col-md-6 input-group">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00%">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-percent"></i></span>
+        </div>
+      </div>
+      <!-- Stamp Duty Empty Col -->
+      <div class="col-12 col-md-6 mt-3">
+        <p class="text-center mb-0"></p>
+      </div>
+      <!-- Stamp Duty Input Disabled -->
+      <div class="col-12 col-md-6 input-group mt-3">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" disabled>
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
+        </div>
       </div>
     </div>
+
     <hr>
+
     <!-- Surveys -->
     <div class="row">
+      <!-- Surveys Header -->
       <div class="col-12">
-        <h5 class="text-center">Surveys</h5>
+        <h5 class="text-center mb-3">Surveys</h5>
       </div>
-      <!-- Survey -->
+      <!-- Surveys -->
       <div class="col-12 col-md-6">
         <p class="text-center mb-0">Building Survey (<em>if applicable</em>)</p>
       </div>
-      <!-- Survey Input -->
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100">
+      <!-- Building Survey Input -->
+      <div class="col-12 col-md-6 input-group">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-hard-hat"></i></span>
+        </div>
       </div>
     </div>
+
     <hr>
-    <!-- Refurbishment & Building Work -->
+
+    <!-- Building & Refurbishment Work -->
     <div class="row">
+      <!-- Building & Refurbishment Work Header -->
       <div class="col-12">
-        <h5 class="text-center">Refurbishment & Building Work</h5>
+        <h5 class="text-center mb-3">Building & Refurbishment Work</h5>
       </div>
-      <!-- Refurbishment -->
+      <!-- Refurbishment <p> -->
       <div class="col-12 col-md-6">
         <p class="text-center mb-0">Refurbishment</p>
       </div>
       <!-- Refurbishment Input -->
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100">
+      <div class="col-12 col-md-6 input-group">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-hard-hat"></i></span>
+        </div>
       </div>
-      <br><br>
-      <!-- Furnishing -->
-      <div class="col-12 col-md-6">
+      <!-- Furnishings -->
+      <div class="col-12 col-md-6 mt-3">
         <p class="text-center mb-0">Furnishings</p>
       </div>
-      <!-- Furnishing Input -->
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100">
+      <!-- Furnishings Input -->
+      <div class="col-12 col-md-6 input-group mt-3">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-couch"></i></span>
+        </div>
       </div>
     </div>
+
     <hr>
-    <!-- Additional Fees -->
+
+    <!-- Additional Fees Not Listed -->
     <div class="row">
+      <!-- Additional Fees Not Listed Header -->
       <div class="col-12">
         <h5 class="text-center">Additional Fees Not Listed</h5>
       </div>
-      <!-- Fee 1 -->
-      <div class="col-12 col-md-6">
-        <input type="text" class="w-100" placeholder="Additional fee 1">
+      <!-- Additional Fee 1 Name Input -->
+      <div class="col-12 col-md-6 input-group mt-3">
+        <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="Additional Fee 1">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fas fa-plus"></i></span>
+        </div>
       </div>
-      <br><br>
-      <!-- Fee 1 amount -->
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100" placeholder="Additional fee 1 amount">
+      <!-- Additional Fee 1 Input Value -->
+      <div class="col-12 col-md-6 input-group mt-3">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
+        </div>
       </div>
-      <!-- Fee 2 -->
-      <div class="col-12 col-md-6">
-        <input type="text" class="w-100" placeholder="Additional fee 2">
-      </div>
-      <br><br>
-      <!-- Fee 2 amount -->
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100" placeholder="Additional fee 2 amount">
-      </div>
-      <!-- Fee 3 -->
-      <div class="col-12 col-md-6">
-        <input type="text" class="w-100" placeholder="Additional fee 3">
-      </div>
-      <br><br>
-      <!-- Fee 3 amount -->
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100" placeholder="Additional fee 3 amount">
-      </div>
-      <!-- Fee 4 -->
-      <div class="col-12 col-md-6">
-        <input type="text" class="w-100" placeholder="Additional fee 4">
-      </div>
-      <br><br>
-      <!-- Fee 4 amount -->
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100" placeholder="Additional fee 4 amount">
-      </div>
-      <!-- Fee 5 -->
-      <div class="col-12 col-md-6">
-        <input type="text" class="w-100" placeholder="Additional fee 5">
-      </div>
-      <br><br>
-      <!-- Fee 5 amount -->
-      <div class="col-12 col-md-6">
-        <input type="number" class="w-100" placeholder="Additional fee 5 amount">
-      </div>
-    </div>
-    <!-- Grand Total -->
-    <div class="row">
-      <div class="col-12 text-center">
-        <input type="number" class="w-50" disabled>
-      </div>
-    </div>
-  </div>
-  <br>
-  <br>
 
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
-  </script>
+      <!-- Additional Fee 2 Name Input -->
+      <div class="col-12 col-md-6 input-group mt-3">
+        <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="Additional Fee 2">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fas fa-plus"></i></span>
+        </div>
+      </div>
+      <!-- Additional Fee 2 Input Value -->
+      <div class="col-12 col-md-6 input-group mt-3">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
+        </div>
+      </div>
+
+      <!-- Additional Fee 3 Name Input -->
+      <div class="col-12 col-md-6 input-group mt-3">
+        <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="Additional Fee 3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fas fa-plus"></i></span>
+        </div>
+      </div>
+      <!-- Additional Fee 3 Input Value -->
+      <div class="col-12 col-md-6 input-group mt-3">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
+        </div>
+      </div>
+      <!-- Additional Fee 4 Name Input -->
+      <div class="col-12 col-md-6 input-group mt-3">
+        <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="Additional Fee 4">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fas fa-plus"></i></span>
+        </div>
+      </div>
+      <!-- Additional Fee 4 Input Value -->
+      <div class="col-12 col-md-6 input-group mt-3">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <!-- Maths Button -->
+    <div class="row">
+      <!-- Building & Refurbishment Work Header -->
+      <div class="col-12">
+        <h5 class="text-center">Grand Total</h5>
+      </div>
+      <!-- Grand Total Amount -->
+      <div class="col-12 input-group mt-3 text-center">
+        <input type="number" class="form-control" aria-describedby="basic-addon1" placeholder="0.00" disabled>
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1"><i class="fas fa-money-bill-alt"></i></span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <br><br><br><br>
+
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

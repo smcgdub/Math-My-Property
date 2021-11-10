@@ -16,3 +16,7 @@ body {
 .navbar_li_items {
   margin-left: 68%;
 }
+
+.navbar-toggler {
+  border-color: #ffffff !important;
+}
