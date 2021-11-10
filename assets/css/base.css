@@ -11,3 +11,8 @@
 body {
   font-family: 'Lato', sans-serif;
 }
+
+/* Navbar */
+.navbar_li_items {
+  margin-left: 68%;
+}
