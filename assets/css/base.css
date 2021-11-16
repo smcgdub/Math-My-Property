@@ -19,4 +19,15 @@ body {
 
 .navbar-toggler {
   border-color: #ffffff !important;
+  color: #ffffff;
+}
+
+/* .navbar-toggler-icon {
+  color: #ffffff !important;
+  background-color: transparent !important;
+} */
+
+.fa-bars:before {
+  color: #ffffff;
+  padding: 3px;
 }
